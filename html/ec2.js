@@ -1,3 +1,4 @@
+document.getElementById("id_logic__version").innerHTML = "Logic Version = 2019.10.14.0"
 
 function solve_eq2()
 {
