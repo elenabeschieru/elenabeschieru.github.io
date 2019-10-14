@@ -1,2 +1,4 @@
 Hello world!
 ceva chestii noi
+Hello world!
+ceva chestii noi
