@@ -1,6 +1,6 @@
 document.getElementById('id_start').addEventListener("click", start);
 document.getElementById('id_stop').addEventListener("click", stop);
-document.getElementById('id_logic').innerHTML = "UI version = 2019.11.01.5";
+document.getElementById('id_logic').innerHTML = "UI version = 2019.11.01.6";
 
 var timer_1;
 var unghi = {};
