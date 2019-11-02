@@ -19,7 +19,7 @@ function  start()
    var raza_mica = 10;
    var muncitor = new Worker("calcul_prime.js");
    muncitor.onmessage = function (e) {
-     document.getElementById("id_prime").innerHTML = e.dta;
+     document.getElementById("id_prime").innerHTML = e.data;
    }
    
     // desenam un cerc la pozitia data de unghi
