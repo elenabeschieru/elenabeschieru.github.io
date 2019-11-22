@@ -10,7 +10,7 @@ function is_prime(n)
   }
 }
 
-for(var i=1E12; i< 1E13; i++)
+for(var i=1E11; i< 1E12; i++)
 
     if(is_prime(i))
     postMessage(i);
