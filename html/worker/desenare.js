@@ -1,6 +1,6 @@
 document.getElementById('id_start').addEventListener("click", start);
 document.getElementById('id_stop').addEventListener("click", stop);
-document.getElementById('id_logic').innerHTML = "UI version = 2019.11.22.0";
+document.getElementById('id_logic').innerHTML = "UI version = 2019.11.22.1";
 
 var timer_1;
 var unghi = {valoare : 0};
@@ -22,6 +22,7 @@ function  start()
       muncitor = new Worker("calcul_prime.js");
       muncitor.onmessage = function (e) {
       document.getElementById("id_prime").innerHTML = e.data;}
+      muncitor.postMessage("start");
   }
    else
    muncitor.postMessage("start");
