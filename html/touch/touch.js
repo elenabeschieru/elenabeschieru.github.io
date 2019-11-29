@@ -1,4 +1,4 @@
-document.getElementById("id_logic").innerHTML = "Logic version 2019.11.29.6";
+document.getElementById("id_logic").innerHTML = "Logic version 2019.11.29.7";
 window.addEventListener("touchstart",touch_start_uab, {passive: false});
 window.addEventListener("touchmove",touch_move_uab, {passive: false});
 
@@ -55,14 +55,14 @@ function touch_move_uab(e)
     {
         var touch_index = -1;
         for(var j=0; j<last_touch.length; j++)
-        {
+        
             if(t[i].identifier == last_touch[j].id)
             {
                 touch_index = j;
                 break;
             }
             context.beginPath();
-            context.moveTo(last_touch[touch_index].x - client_rect.left, last_touch[touch_index].x - client_rect.top);
+            context.moveTo(last_touch[touch_index].x - client_rect.left, last_touch[touch_index].y - client_rect.top);
             context.lineTo(t[i].pageX - client_rect.left, t[i].pageY - client_rect.top);
             context.alineWidth = 20;
             context.strokeStyle = last_touch[touch_index].color;
@@ -73,6 +73,6 @@ function touch_move_uab(e)
 
             last_touch[touch_index].x = t[i].x;
             last_touch[touch_index].y = t[i].y;
-        }
+        
     }
 }
