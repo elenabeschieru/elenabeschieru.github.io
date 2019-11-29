@@ -1,4 +1,4 @@
-document.getElementById("id_logic").innerHTML = "Logic version 2019.11.29.2";
+document.getElementById("id_logic").innerHTML = "Logic version 2019.11.29.3";
 window.addEventListener("touchstart",touch_start_uab);
 
 var canvas = document.getElementById("id_canvas");
