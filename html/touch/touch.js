@@ -1,6 +1,6 @@
-document.getElementById("id_logic").innerHTML = "Logic version 2019.11.29.5";
-window.addEventListener("touchstart",touch_start_uab);
-window.addEventListener("touchmove",touch_move_uab);
+document.getElementById("id_logic").innerHTML = "Logic version 2019.11.29.6";
+window.addEventListener("touchstart",touch_start_uab, {passive: false});
+window.addEventListener("touchmove",touch_move_uab, {passive: false});
 
 var canvas = document.getElementById("id_canvas");
 var context = canvas.getContext("2d");
