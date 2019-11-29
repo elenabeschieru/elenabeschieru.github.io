@@ -1,4 +1,4 @@
-document.getElementById("id_logic").innerHTML = "Logic version 2019.11.29.1";
+document.getElementById("id_logic").innerHTML = "Logic version 2019.11.29.2";
 window.addEventListener("touchstart",touch_start_uab);
 
 var canvas = document.getElementById("id_canvas");
@@ -14,6 +14,19 @@ function touch_start_uab(e)
     {
         context.beginPath();
         context.arc(t[i].pageX-client_rect.left, t[i].pageY-client_rect.top, 10, 0, 2* Math.PI);
+        context.fillStyle = get_random_clor();
+        context.strokeStyle = context.fillStyle;
         context.stroke();
+
+    }
+}
+
+function get_random_clor()
+{
+    var tmp = "0123456789ABCDEF";
+    var culoare = "#";
+    for(var i = 0; i < 6; i++)
+    {
+        culoare += tmp[Math.floor(Math.random()* 16)];
     }
 }
